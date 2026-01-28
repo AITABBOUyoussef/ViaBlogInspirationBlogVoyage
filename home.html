@@ -9,12 +9,18 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-white dark:bg-gray-900">
   <header class="bg-white sticky top-0 z-10 h-[10vh] flex justify-between">
-    <svg xmlns="http://www.w3.org/2000/svg" class="m-5" width="35" height="35" viewBox="0 0 16 16">
+    <button id="menu-btn" class=" focus:outline-none">
+    <svg xmlns="http://www.w3.org/2000/svg" class="m-5"  width="35" height="35" viewBox="0 0 16 16">
       <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
         d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5" />
-    </svg>
+    </svg></button>
+    <div id="mobile-menu" class="hidden w-full  bg-white shadow-lg absolute top-[10vh] left-0 flex  flex-col items-center gap-4 py-4 z-50">
+      <a href="#" class="hover:bg-slate-500 h-8 w-full text-center">Mode Sombre</a>
+      <a href="#" class="hover:bg-slate-500 h-8 w-full text-center">home</a>
+      <a href="#" class="hover:bg-slate-500 h-8 w-full text-center">home</a>
+    </div>
     <svg xmlns="http://www.w3.org/2000/svg" class="m-5 hover:h-[40px] hover:w-[40px]" width="35" height="35"
       viewBox="0 0 24 24">
       <g fill="none" fill-rule="evenodd">
@@ -70,7 +76,7 @@
     </div>
 
     <div class="flex flex-col h-min shadow-2xl m-4 rounded-lg border border-black border-solid" >
-      <div class="bg-[url('A.jpg')] bg-center bg-cover ml-4 mr-4 mt-4 h-[30vh] rounded-md relative"> <a
+      <div class="bg-[url('A.jpg')] bg-center bg-cover ml-4 mr-4 mt-4 h-[30vh] lg:h-[90vh] rounded-md relative"> <a
           href="detail.html " class="absolute inset-0"></a>
         <div
           class="absolute top-2 right-3 bg-white/50 hover:bg-red-400 duration-300 h-[50px] w-[50px] rounded-full flex justify-center items-center">
@@ -109,8 +115,8 @@
 
     <div class="flex flex-col ">
       <div class="flex">
-        <div class="flex flex-col w-1/2 ">
-          <div class="bg-[url('zlij.avif')] bg-center bg-cover ml-4 mr-4 mt-4 h-[20vh] rounded-md relative">
+        <div class="flex flex-col w-1/2  ">
+          <div class="bg-[url('zlij.avif')] bg-center bg-cover ml-4 mr-4 mt-4 h-[20vh] lg:h-[50vh] rounded-md relative">
             <div
               class="absolute top-2 right-3 bg-white/50  hover:bg-red-400 h-[30px] w-[30px] rounded-full flex justify-center items-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 48 48">
@@ -154,7 +160,7 @@
         </div>
 
         <div class="flex flex-col w-1/2">
-          <div class="bg-[url('golden.avif')] bg-center bg-cover ml-4 mr-4 mt-4 h-[20vh] rounded-md relative">
+          <div class="bg-[url('golden.avif')] bg-center bg-cover ml-4 mr-4 mt-4 h-[20vh] lg:h-[50vh] rounded-md relative">
             <div
               class="absolute top-2 right-3 bg-white/50  hover:bg-red-400 h-[30px] w-[30px] rounded-full flex justify-center items-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 48 48">
@@ -201,7 +207,7 @@
 
       <div class="flex">
         <div class="flex flex-col w-1/2">
-          <div class="bg-[url('brasil.avif')] bg-center bg-cover ml-4 mr-4 mt-4 h-[20vh] rounded-md relative">
+          <div class="bg-[url('brasil.avif')] bg-center bg-cover ml-4 mr-4 mt-4 h-[20vh] lg:h-[50vh] rounded-md relative">
             <div
               class="absolute top-2 right-3 bg-white/50  hover:bg-red-400 h-[30px] w-[30px] rounded-full flex justify-center items-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 48 48">
@@ -245,7 +251,7 @@
         </div>
 
         <div class="flex flex-col w-1/2">
-          <div class="bg-[url('indonisia.avif')] bg-center bg-cover ml-4 mr-4 mt-4 h-[20vh] rounded-md relative">
+          <div class="bg-[url('indonisia.avif')] bg-center bg-cover ml-4 mr-4 mt-4 h-[20vh] lg:h-[50vh] rounded-md relative">
             <div
               class="absolute top-2 right-3 bg-white/50  hover:bg-red-400 h-[30px] w-[30px] rounded-full flex justify-center items-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 48 48">
@@ -311,7 +317,7 @@
         </svg></a>
     </div>
     <div class="hover:bg-green-400 duration-300 h-[10vh] w-[25%] rounded-2xl m-2 flex justify-center items-center">
-      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="hover:h-[30px] hover:w-[30px]" width="24" height="24"
+      <a href="like.html"><svg xmlns="http://www.w3.org/2000/svg" class="hover:h-[30px] hover:w-[30px]" width="24" height="24"
           viewBox="0 0 48 48">
           <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
             d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.99 10.99 0 0 0 15 8" />
@@ -326,6 +332,14 @@
     </div>
 
   </footer>
+
+       <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click' , ()=> { menu.classList.toggle('hidden') ;});
+       </script>
+
+
 </body>
 
 </html>
