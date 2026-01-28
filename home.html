@@ -1,630 +1,331 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="./output.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <header class="bg-white sticky top-0 z-10 h-[10vh] flex justify-between">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="m-5"
-        width="35"
-        height="35"
-        viewBox="0 0 16 16"
-      >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="./output.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="bg-white sticky top-0 z-10 h-[10vh] flex justify-between">
+    <svg xmlns="http://www.w3.org/2000/svg" class="m-5" width="35" height="35" viewBox="0 0 16 16">
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+        d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="m-5 hover:h-[40px] hover:w-[40px]" width="35" height="35"
+      viewBox="0 0 24 24">
+      <g fill="none" fill-rule="evenodd">
         <path
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="1.5"
-          d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"
-        />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="m-5 hover:h-[40px] hover:w-[40px]"
-        width="35"
-        height="35"
-        viewBox="0 0 24 24"
-      >
-        <g fill="none" fill-rule="evenodd">
-          <path
-            d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
-          />
-          <path
-            fill="currentColor"
-            d="M10.5 2a8.5 8.5 0 1 0 5.262 15.176l3.652 3.652a1 1 0 0 0 1.414-1.414l-3.652-3.652A8.5 8.5 0 0 0 10.5 2M4 10.5a6.5 6.5 0 1 1 13 0a6.5 6.5 0 0 1-13 0"
-          />
-        </g>
-      </svg>
-    </header>
-    <main class="">
-      <p class="ml-4 font-bold text-xl">Blogger of week</p>
-      <div class="flex w-max">
-        <div class="flex flex-col m-2 ml-4">
-          <img src="A.jpg" alt="photo" class="rounded-full h-[70px] w-[70px]" />
-          <p class="flex justify-center items-center w-[70px]">Josefina Hudson</p>
-        </div>
-        <div class="flex flex-col m-2">
-          <img src="A.jpg" alt="photo" class="rounded-full h-[70px] w-[70px]" />
-          <p class="flex justify-center items-center w-[70px]">Jeo Rath</p>
-        </div>
-        <div class="flex flex-col m-2">
-          <img src="A.jpg" alt="photo" class="rounded-full h-[70px] w-[70px]" />
-          <p class="flex justify-center items-center  w-[70px]">Francis Sanford</p>
-        </div>
-        <div class="flex flex-col m-2">
-          <img src="A.jpg" alt="photo" class="rounded-full h-[70px] w-[70px]" />
-          <p class="flex justify-center items-center w-[70px]">Bradley Stiedemann</p>
-        </div>
+          d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+        <path fill="currentColor"
+          d="M10.5 2a8.5 8.5 0 1 0 5.262 15.176l3.652 3.652a1 1 0 0 0 1.414-1.414l-3.652-3.652A8.5 8.5 0 0 0 10.5 2M4 10.5a6.5 6.5 0 1 1 13 0a6.5 6.5 0 0 1-13 0" />
+      </g>
+    </svg>
+  </header>
+  <main class="">
+    <p class="ml-4 font-bold text-xl">Blogger of week</p>
+    <div class="flex w-max">
+      <div class="flex flex-col m-2 ml-4">
+        <img src="photo/p1.avif" alt="photo" class="rounded-full h-[70px] w-[70px]  object-cover" />
+        <p class="flex justify-center items-center w-[70px]">Josefina Hudson</p>
       </div>
-      <p class="ml-6 m-2 mt-4 font-bold text-xl">what do you want to read</p>
-      <div class="flex">
-        <div
-          class="border-black hover:border-none duration-400 hover:bg-green-300 border-2 m-2 ml-4 h-[30px] w-[60px] flex justify-center items-center rounded-md"
-        >
-          <p>All</p>
-        </div>
-        <div
-          class="border-black hover:border-none duration-300 hover:bg-green-300 border-2 m-2 h-[30px] w-[60px] flex justify-center items-center rounded-md"
-        >
-          <p>Forest</p>
-        </div>
-
-        <div
-          class="border-black hover:border-none duration-300 hover:bg-green-300 border-2 m-2 h-[30px] w-[60px] flex justify-center items-center rounded-md"
-        >
-          <p>Beach</p>
-        </div>
-
-        <div
-          class="border-black hover:border-none duration-300 hover:bg-green-300 border-2 m-2 h-[30px] w-[60px] flex justify-center items-center rounded-md"
-        >
-          <p>River</p>
-        </div>
-
-        <div
-          class="border-black hover:border-none duration-300 hover:bg-green-300 border-2 m-2 h-[30px] w-max flex justify-center items-center rounded-md"
-        >
-          <p>Mounstains</p>
-        </div>
+      <div class="flex flex-col m-2">
+        <img src="photo/p2.avif" alt="photo" class="rounded-full h-[70px] w-[70px] object-cover" />
+        <p class="flex justify-center items-center w-[70px]">Jeo Rath</p>
       </div>
-
-      <div class="flex flex-col h-min shadow-2xl m-4 rounded-lg border-3 border-black">
-        <div 
-          class="bg-[url('A.jpg')] bg-center bg-cover ml-4 mr-4 mt-4 h-[30vh] rounded-md relative"
-        > <a href="detail.html " class="absolute inset-0"></a>
-         <div class="absolute top-2 right-3 bg-white/50 hover:bg-red-400 duration-300 h-[50px] w-[50px] rounded-full flex justify-center items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class=""
-            width="38"
-            height="38"
-            viewBox="0 0 48 48"
-          >
-            <path
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="4"
-              d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.99 10.99 0 0 0 15 8"
-            />
-          </svg></div>
-        </div>
-        <div class="flex justify-between ml-4 mr-4 mt-4 ">
-          <p class="ml-2 text-lg">Yellox River</p>
-          <div class="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 48 48"
-            >
-              <circle
-                cx="24"
-                cy="17.93"
-                r="4.82"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-              />
-              <path
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M24 43.83c.43 0 1.26-.11 1.26-1.74h0c0-5.14 7.27-10.78 10.57-17.15a13.76 13.76 0 1 0-23.66 0c3.3 6.37 10.57 12 10.57 17.15c0 1.63.83 1.74 1.26 1.74"
-                stroke-width="2"
-              />
-            </svg>
-            <p class="font-extralight">China</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0m9 0H8.5M12 7v5"
-              />
-            </svg>
-            <p class="font-extralight">15min</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <g
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-              >
-                <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0" />
-                <path
-                  d="M2 12c1.6-4.097 5.336-7 10-7s8.4 2.903 10 7c-1.6 4.097-5.336 7-10 7s-8.4-2.903-10-7"
-                />
-              </g>
-            </svg>
-            <p class="font-extralight">12k</p>
-          </div>
-        </div>
-        <p class="ml-6 font-light ">by Yousse Ait Abbou</p>
+      <div class="flex flex-col m-2">
+        <img src="photo/p3.avif" alt="photo" class="rounded-full h-[70px] w-[70px]  object-cover" />
+        <p class="flex justify-center items-center  w-[70px]">Francis Sanford</p>
       </div>
-
-
-      
-
-
-      <div class="flex flex-col ">
-        <div class="flex">
-          <div class="flex flex-col w-1/2">
-            <div
-              class="bg-[url('A.jpg')] bg-center bg-cover ml-4 mr-4 mt-4 h-[20vh] rounded-md relative"
-            >
-            <div class="absolute top-2 right-3 bg-white/50  hover:bg-red-400 h-[30px] w-[30px] rounded-full flex justify-center items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class=""
-                width="24"
-                height="24"
-                viewBox="0 0 48 48"
-              >
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="4"
-                  d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.99 10.99 0 0 0 15 8"
-                />
-              </svg></div>
-            </div>
-
-
-            <div class="flex justify-between m-4">
-                <div class="flex-col flex">
-              <p class="ml-2 text-base">Yellox Rive</p>
-              <p class="ml-2 font-light text-xs">by XXXXXX</p></div>
-              <div class="flex flex-col">
-                <div class="flex gap-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 48 48"
-                >
-                  <circle
-                    cx="24"
-                    cy="17.93"
-                    r="4.82"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                  />
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M24 43.83c.43 0 1.26-.11 1.26-1.74h0c0-5.14 7.27-10.78 10.57-17.15a13.76 13.76 0 1 0-23.66 0c3.3 6.37 10.57 12 10.57 17.15c0 1.63.83 1.74 1.26 1.74"
-                    stroke-width="2"
-                  />
-                </svg>
-                <p class="font-extralight text-xs">China</p></div>
-                <div class="flex"><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0m9 0H8.5M12 7v5"
-                  />
-                </svg>
-                <p class="font-extralight text-xs ml-1">15min</p></div>
-                <div class="flex"><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                >
-                  <g
-                    fill="none"  stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"  stroke-width="2"  > <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0" /> <path  d="M2 12c1.6-4.097 5.336-7 10-7s8.4 2.903 10 7c-1.6 4.097-5.336 7-10 7s-8.4-2.903-10-7"  /> </g>
-                </svg>
-                <p class="font-extralight text-xs ml-1">12k</p></div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="flex flex-col w-1/2">
-            <div
-              class="bg-[url('A.jpg')] bg-center bg-cover ml-4 mr-4 mt-4 h-[20vh] rounded-md relative"
-            >
-            <div class="absolute top-2 right-3 bg-white/50  hover:bg-red-400 h-[30px] w-[30px] rounded-full flex justify-center items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class=""
-                width="24"
-                height="24"
-                viewBox="0 0 48 48"
-              >
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="4"
-                  d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.99 10.99 0 0 0 15 8"
-                />
-              </svg></div>
-            </div>
-
-
-            <div class="flex justify-between m-4">
-                <div class="flex-col flex">
-              <p class="ml-2 text-base">Yellox Rive</p>
-              <p class="ml-2 font-light text-xs">by XXXXXX</p></div>
-              <div class="flex flex-col">
-                <div class="flex gap-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 48 48"
-                >
-                  <circle
-                    cx="24"
-                    cy="17.93"
-                    r="4.82"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                  />
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M24 43.83c.43 0 1.26-.11 1.26-1.74h0c0-5.14 7.27-10.78 10.57-17.15a13.76 13.76 0 1 0-23.66 0c3.3 6.37 10.57 12 10.57 17.15c0 1.63.83 1.74 1.26 1.74"
-                    stroke-width="2"
-                  />
-                </svg>
-                <p class="font-extralight text-xs">China</p></div>
-                <div class="flex"><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0m9 0H8.5M12 7v5"
-                  />
-                </svg>
-                <p class="font-extralight text-xs ml-1">15min</p></div>
-                <div class="flex"><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                >
-                  <g
-                    fill="none"  stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"  stroke-width="2"  > <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0" /> <path  d="M2 12c1.6-4.097 5.336-7 10-7s8.4 2.903 10 7c-1.6 4.097-5.336 7-10 7s-8.4-2.903-10-7"  /> </g>
-                </svg>
-                <p class="font-extralight text-xs ml-1">12k</p></div>
-              </div>
-            </div>
-          </div>
-          
-          
-
-            </div>
-
-            <div class="flex">
-          <div class="flex flex-col w-1/2">
-            <div
-              class="bg-[url('A.jpg')] bg-center bg-cover ml-4 mr-4 mt-4 h-[20vh] rounded-md relative"
-            >
-            <div class="absolute top-2 right-3 bg-white/50  hover:bg-red-400 h-[30px] w-[30px] rounded-full flex justify-center items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class=""
-                width="24"
-                height="24"
-                viewBox="0 0 48 48"
-              >
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="4"
-                  d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.99 10.99 0 0 0 15 8"
-                />
-              </svg></div>
-            </div>
-
-
-            <div class="flex justify-between m-4">
-                <div class="flex-col flex">
-              <p class="ml-2 text-base">Yellox Rive</p>
-              <p class="ml-2 font-light text-xs">by XXXXXX</p></div>
-              <div class="flex flex-col">
-                <div class="flex gap-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 48 48"
-                >
-                  <circle
-                    cx="24"
-                    cy="17.93"
-                    r="4.82"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                  />
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M24 43.83c.43 0 1.26-.11 1.26-1.74h0c0-5.14 7.27-10.78 10.57-17.15a13.76 13.76 0 1 0-23.66 0c3.3 6.37 10.57 12 10.57 17.15c0 1.63.83 1.74 1.26 1.74"
-                    stroke-width="2"
-                  />
-                </svg>
-                <p class="font-extralight text-xs">China</p></div>
-                <div class="flex"><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0m9 0H8.5M12 7v5"
-                  />
-                </svg>
-                <p class="font-extralight text-xs ml-1">15min</p></div>
-                <div class="flex"><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                >
-                  <g
-                    fill="none"  stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"  stroke-width="2"  > <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0" /> <path  d="M2 12c1.6-4.097 5.336-7 10-7s8.4 2.903 10 7c-1.6 4.097-5.336 7-10 7s-8.4-2.903-10-7"  /> </g>
-                </svg>
-                <p class="font-extralight text-xs ml-1">12k</p></div>
-              </div>
-            </div>
-          </div>
-        
-          <div class="flex flex-col w-1/2">
-            <div
-              class="bg-[url('A.jpg')] bg-center bg-cover ml-4 mr-4 mt-4 h-[20vh] rounded-md relative"
-            >
-            <div class="absolute top-2 right-3 bg-white/50  hover:bg-red-400 h-[30px] w-[30px] rounded-full flex justify-center items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class=""
-                width="24"
-                height="24"
-                viewBox="0 0 48 48"
-              >
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="4"
-                  d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.99 10.99 0 0 0 15 8"
-                />
-              </svg></div>
-            </div>
-
-
-            <div class="flex justify-between m-4">
-                <div class="flex-col flex">
-              <p class="ml-2 text-base">Yellox Rive</p>
-              <p class="ml-2 font-light text-xs">by XXXXXX</p></div>
-              <div class="flex flex-col">
-                <div class="flex gap-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 48 48"
-                >
-                  <circle
-                    cx="24"
-                    cy="17.93"
-                    r="4.82"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                  />
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M24 43.83c.43 0 1.26-.11 1.26-1.74h0c0-5.14 7.27-10.78 10.57-17.15a13.76 13.76 0 1 0-23.66 0c3.3 6.37 10.57 12 10.57 17.15c0 1.63.83 1.74 1.26 1.74"
-                    stroke-width="2"
-                  />
-                </svg>
-                <p class="font-extralight text-xs">China</p></div>
-                <div class="flex"><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0m9 0H8.5M12 7v5"
-                  />
-                </svg>
-                <p class="font-extralight text-xs ml-1">15min</p></div>
-                <div class="flex"><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                >
-                  <g
-                    fill="none"  stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"  stroke-width="2"  > <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0" /> <path  d="M2 12c1.6-4.097 5.336-7 10-7s8.4 2.903 10 7c-1.6 4.097-5.336 7-10 7s-8.4-2.903-10-7"  /> </g>
-                </svg>
-                <p class="font-extralight text-xs ml-1">12k</p></div>
-              </div>
-            </div>
-          </div>
-          
-          
-
-            </div>
-
-          </div>
-        
-    </main>
-    <footer class=" sticky bottom-0 bg-white h-[13vh] flex">
-        <div class="hover:bg-green-400  duration-300 h-[10vh] w-[25%] rounded-2xl m-2 ml-4 flex justify-center items-center">
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="hover:h-[30px] hover:w-[30px]" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 12L12 1l11 11m-2-2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10m6 12v-8h6v8"/></svg></a>
-        </div> 
-    <div class="hover:bg-green-400 duration-300 h-[10vh] w-[25%] rounded-2xl m-2 flex justify-center items-center">
-        <a href="#"> <svg
-              xmlns="http://www.w3.org/2000/svg" class="hover:h-[30px] hover:w-[30px]"
-              width="24"
-              height="24"
-              viewBox="0 0 48 48"
-            >
-              <circle
-                cx="24"
-                cy="17.93"
-                r="4.82"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-              />
-              <path
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M24 43.83c.43 0 1.26-.11 1.26-1.74h0c0-5.14 7.27-10.78 10.57-17.15a13.76 13.76 0 1 0-23.66 0c3.3 6.37 10.57 12 10.57 17.15c0 1.63.83 1.74 1.26 1.74"
-                stroke-width="2"
-              />
-            </svg></a>
+      <div class="flex flex-col m-2">
+        <img src="photo/p4.avif" alt="photo" class="rounded-full h-[70px] w-[70px]  object-cover" />
+        <p class="flex justify-center items-center w-[70px]">Bradley Stiedemann</p>
+      </div>
     </div>
-<div class="hover:bg-green-400 duration-300 h-[10vh] w-[25%] rounded-2xl m-2 flex justify-center items-center">
-    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="hover:h-[30px] hover:w-[30px]" width="24" height="24" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.99 10.99 0 0 0 15 8"/></svg></a>
-</div>
+    <p class="ml-6 m-2 mt-4 font-bold text-xl">what do you want to read</p>
+     <div class="flex overflow-x-auto no-scrollbar px-2">
+      <div
+        class="border-gray-300 hover:border-none duration-400 hover:bg-green-300 border m-2 ml-4 h-[30px] px-4 flex justify-center items-center rounded-full ">
+        <p class="text-sm">All</p>
+      </div>
+      <div
+        class="border-gray-300 hover:border-none duration-300 hover:bg-green-300 border m-2 h-[30px] px-4 flex justify-center items-center rounded-full  ">
+        <p class="text-sm">Forest</p>
+      </div>
+      <div
+        class="border-gray-300 hover:border-none duration-300 hover:bg-green-300 border m-2 h-[30px] px-4 flex justify-center items-center rounded-full  ">
+        <p class="text-sm">Beach</p>
+      </div>
+      <div
+        class="border-gray-300 hover:border-none duration-300 hover:bg-green-300 border m-2 h-[30px] px-4 flex justify-center items-center rounded-full  ">
+        <p class="text-sm">River</p>
+      </div>
+      <div
+        class="border-gray-300 hover:border-none duration-300 hover:bg-green-300 border m-2 h-[30px] px-4 flex justify-center items-center rounded-full   ">
+        <p class="text-sm">Mountains</p>
+      </div>
+    </div>
 
+    <div class="flex flex-col h-min shadow-2xl m-4 rounded-lg border border-black border-solid" >
+      <div class="bg-[url('A.jpg')] bg-center bg-cover ml-4 mr-4 mt-4 h-[30vh] rounded-md relative"> <a
+          href="detail.html " class="absolute inset-0"></a>
+        <div
+          class="absolute top-2 right-3 bg-white/50 hover:bg-red-400 duration-300 h-[50px] w-[50px] rounded-full flex justify-center items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="" width="38" height="38" viewBox="0 0 48 48">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+              d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.99 10.99 0 0 0 15 8" />
+          </svg></div>
+      </div>
+      <div class="flex justify-between ml-4 mr-4 mt-4 ">
+        <p class="ml-2 text-lg">Yellox River</p>
+        <div class="flex">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+            <circle cx="24" cy="17.93" r="4.82" fill="none" stroke="currentColor" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="2" />
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              d="M24 43.83c.43 0 1.26-.11 1.26-1.74h0c0-5.14 7.27-10.78 10.57-17.15a13.76 13.76 0 1 0-23.66 0c3.3 6.37 10.57 12 10.57 17.15c0 1.63.83 1.74 1.26 1.74"
+              stroke-width="2" />
+          </svg>
+          <p class="font-extralight">China</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0m9 0H8.5M12 7v5" />
+          </svg>
+          <p class="font-extralight">15min</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0" />
+              <path d="M2 12c1.6-4.097 5.336-7 10-7s8.4 2.903 10 7c-1.6 4.097-5.336 7-10 7s-8.4-2.903-10-7" />
+            </g>
+          </svg>
+          <p class="font-extralight">12k</p>
+        </div>
+      </div>
+      <p class="ml-6 font-light ">by Yousse Ait Abbou</p>
+    </div>
 
-<div>
-<button onclick="document.getElementById('profil').classList.remove('hidden')"
- class="hover:bg-green-400 duration-300 h-[10vh] w-[25%] rounded-2xl m-2 mr-4 flex justify-center items-center">
-    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="hover:h-[30px] hover:w-[30px]" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M8 7a4 4 0 1 1 8 0a4 4 0 0 1-8 0m0 6a5 5 0 0 0-5 5a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3a5 5 0 0 0-5-5z" clip-rule="evenodd"/></svg> 
-    </a>
-</button>   
-   <div id="profil"
-   class="bg-white/30">
-<h2 class="text-black font-bold">Login</h2>
-<div>
-    <div>
-                            <label class="block text-sm font-medium text-gray-900 dark:text-gray-300 mb-1">Nom
-                                d'utilisateur</label>
-                            <input type="text" id="nomF"
-                                class="w-full px-4 py-2 rounded-lg border border-white/20 bg-white/10 text-white placeholder-gray-400 backdrop-blur-md outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/20 transition-all"
-                                placeholder="" required />
-                        </div>
+    <div class="flex flex-col ">
+      <div class="flex">
+        <div class="flex flex-col w-1/2 ">
+          <div class="bg-[url('zlij.avif')] bg-center bg-cover ml-4 mr-4 mt-4 h-[20vh] rounded-md relative">
+            <div
+              class="absolute top-2 right-3 bg-white/50  hover:bg-red-400 h-[30px] w-[30px] rounded-full flex justify-center items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 48 48">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                  d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.99 10.99 0 0 0 15 8" />
+              </svg></div>
+          </div>
 
-                        <div>
-                            <label class="block text-sm font-medium text-gray-900 dark:text-gray-300 mb-1">Mot de
-                                passe</label>
-                            <input type="text" id="prenomF"
-                                class="w-full px-4 py-2 rounded-lg border- border-white/20 bg-white/10 text-white placeholder-gray-400 backdrop-blur-md outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/20 transition-all"
-                                placeholder="" required />
+          <div class="flex justify-between m-4">
+            <div class="flex-col flex">
+              <p class="ml-2 text-base">high Atlas</p>
+              <p class="ml-2 font-light text-xs">by Amine</p>
+            </div>
+            <div class="flex flex-col">
+              <div class="flex gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 48 48">
+                  <circle cx="24" cy="17.93" r="4.82" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" />
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 43.83c.43 0 1.26-.11 1.26-1.74h0c0-5.14 7.27-10.78 10.57-17.15a13.76 13.76 0 1 0-23.66 0c3.3 6.37 10.57 12 10.57 17.15c0 1.63.83 1.74 1.26 1.74"
+                    stroke-width="2" />
+                </svg>
+                <p class="font-extralight text-xs">Morocco</p>
+              </div>
+              <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0m9 0H8.5M12 7v5" />
+                </svg>
+                <p class="font-extralight text-xs ml-1">12min</p>
+              </div>
+              <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24">
+                  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0" />
+                    <path d="M2 12c1.6-4.097 5.336-7 10-7s8.4 2.903 10 7c-1.6 4.097-5.336 7-10 7s-8.4-2.903-10-7" />
+                  </g>
+                </svg>
+                <p class="font-extralight text-xs ml-1">12k</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                                <div class="flex justify-between mt-8 pt-4 dark:border-gray-700">
-                                <button type="button"
-                                    onclick="document.getElementById('profil').classList.add('hidden')"
-                                    class="px-5 py-2 bg-gray-300 hover:bg-gray-400 text-gray-800 rounded-lg transition dark:bg-gray-600 dark:text-gray-200">
-                                    Annuler
-                                </button>
-                                  <button type="submit" onclick="verifyLoginF()"
-                                    class="px-5 py-2 bg-blue-700 hover:bg-blue-800 text-white font-bold rounded-lg shadow transition transform hover:scale-105">
-                                    Login
-                                </button>
+        <div class="flex flex-col w-1/2">
+          <div class="bg-[url('golden.avif')] bg-center bg-cover ml-4 mr-4 mt-4 h-[20vh] rounded-md relative">
+            <div
+              class="absolute top-2 right-3 bg-white/50  hover:bg-red-400 h-[30px] w-[30px] rounded-full flex justify-center items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 48 48">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                  d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.99 10.99 0 0 0 15 8" />
+              </svg></div>
+          </div>
 
-</div>
-                        </div>
-</div>
-</div>
-</footer>
-  </body>
+          <div class="flex justify-between m-4">
+            <div class="flex-col flex">
+              <p class="ml-2 text-base">Sahara</p>
+              <p class="ml-2 font-light text-xs">by Ali</p>
+            </div>
+            <div class="flex flex-col">
+              <div class="flex gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 48 48">
+                  <circle cx="24" cy="17.93" r="4.82" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" />
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 43.83c.43 0 1.26-.11 1.26-1.74h0c0-5.14 7.27-10.78 10.57-17.15a13.76 13.76 0 1 0-23.66 0c3.3 6.37 10.57 12 10.57 17.15c0 1.63.83 1.74 1.26 1.74"
+                    stroke-width="2" />
+                </svg>
+                <p class="font-extralight text-xs">Desert</p>
+              </div>
+              <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0m9 0H8.5M12 7v5" />
+                </svg>
+                <p class="font-extralight text-xs ml-1">20min</p>
+              </div>
+              <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24">
+                  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0" />
+                    <path d="M2 12c1.6-4.097 5.336-7 10-7s8.4 2.903 10 7c-1.6 4.097-5.336 7-10 7s-8.4-2.903-10-7" />
+                  </g>
+                </svg>
+                <p class="font-extralight text-xs ml-1">12k</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="flex">
+        <div class="flex flex-col w-1/2">
+          <div class="bg-[url('brasil.avif')] bg-center bg-cover ml-4 mr-4 mt-4 h-[20vh] rounded-md relative">
+            <div
+              class="absolute top-2 right-3 bg-white/50  hover:bg-red-400 h-[30px] w-[30px] rounded-full flex justify-center items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 48 48">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                  d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.99 10.99 0 0 0 15 8" />
+              </svg></div>
+          </div>
+
+          <div class="flex justify-between m-4">
+            <div class="flex-col flex">
+              <p class="ml-2 text-base">Amazon</p>
+              <p class="ml-2 font-light text-xs">by Rio</p>
+            </div>
+            <div class="flex flex-col">
+              <div class="flex gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 48 48">
+                  <circle cx="24" cy="17.93" r="4.82" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" />
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 43.83c.43 0 1.26-.11 1.26-1.74h0c0-5.14 7.27-10.78 10.57-17.15a13.76 13.76 0 1 0-23.66 0c3.3 6.37 10.57 12 10.57 17.15c0 1.63.83 1.74 1.26 1.74"
+                    stroke-width="2" />
+                </svg>
+                <p class="font-extralight text-xs">Brazil</p>
+              </div>
+              <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0m9 0H8.5M12 7v5" />
+                </svg>
+                <p class="font-extralight text-xs ml-1">25min</p>
+              </div>
+              <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24">
+                  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0" />
+                    <path d="M2 12c1.6-4.097 5.336-7 10-7s8.4 2.903 10 7c-1.6 4.097-5.336 7-10 7s-8.4-2.903-10-7" />
+                  </g>
+                </svg>
+                <p class="font-extralight text-xs ml-1">12k</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col w-1/2">
+          <div class="bg-[url('indonisia.avif')] bg-center bg-cover ml-4 mr-4 mt-4 h-[20vh] rounded-md relative">
+            <div
+              class="absolute top-2 right-3 bg-white/50  hover:bg-red-400 h-[30px] w-[30px] rounded-full flex justify-center items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 48 48">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                  d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.99 10.99 0 0 0 15 8" />
+              </svg></div>
+          </div>
+
+          <div class="flex justify-between m-4">
+            <div class="flex-col flex">
+              <p class="ml-2 text-base">Bali Island</p>
+              <p class="ml-2 font-light text-xs">by Sarah</p>
+            </div>
+            <div class="flex flex-col">
+              <div class="flex gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 48 48">
+                  <circle cx="24" cy="17.93" r="4.82" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" />
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 43.83c.43 0 1.26-.11 1.26-1.74h0c0-5.14 7.27-10.78 10.57-17.15a13.76 13.76 0 1 0-23.66 0c3.3 6.37 10.57 12 10.57 17.15c0 1.63.83 1.74 1.26 1.74"
+                    stroke-width="2" />
+                </svg>
+                <p class="font-extralight text-xs">indonisia</p>
+              </div>
+              <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0m9 0H8.5M12 7v5" />
+                </svg>
+                <p class="font-extralight text-xs ml-1">10min</p>
+              </div>
+              <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24">
+                  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0" />
+                    <path d="M2 12c1.6-4.097 5.336-7 10-7s8.4 2.903 10 7c-1.6 4.097-5.336 7-10 7s-8.4-2.903-10-7" />
+                  </g>
+                </svg>
+                <p class="font-extralight text-xs ml-1">12k</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+  <footer class=" sticky bottom-0 bg-white h-[13vh] flex">
+    <div class="bg-green-400  duration-300 h-[10vh] w-[25%] rounded-2xl m-2 ml-4 flex justify-center items-center">
+      <a href="home.html"><svg xmlns="http://www.w3.org/2000/svg" class="hover:h-[30px] hover:w-[30px]" width="24"
+          height="24" viewBox="0 0 24 24">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 12L12 1l11 11m-2-2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10m6 12v-8h6v8" /></svg></a>
+    </div>
+    <div class="hover:bg-green-400 duration-300 h-[10vh] w-[25%] rounded-2xl m-2 flex justify-center items-center">
+      <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" class="hover:h-[30px] hover:w-[30px]" width="24" height="24"
+          viewBox="0 0 48 48">
+          <circle cx="24" cy="17.93" r="4.82" fill="none" stroke="currentColor" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="2" />
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            d="M24 43.83c.43 0 1.26-.11 1.26-1.74h0c0-5.14 7.27-10.78 10.57-17.15a13.76 13.76 0 1 0-23.66 0c3.3 6.37 10.57 12 10.57 17.15c0 1.63.83 1.74 1.26 1.74"
+            stroke-width="2" />
+        </svg></a>
+    </div>
+    <div class="hover:bg-green-400 duration-300 h-[10vh] w-[25%] rounded-2xl m-2 flex justify-center items-center">
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="hover:h-[30px] hover:w-[30px]" width="24" height="24"
+          viewBox="0 0 48 48">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+            d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.99 10.99 0 0 0 15 8" />
+          </svg></a>
+    </div>
+    <div class="hover:bg-green-400 duration-300 h-[10vh] w-[25%] rounded-2xl m-2 mr-4 flex justify-center items-center">
+      <a href="profil.html"><svg xmlns="http://www.w3.org/2000/svg" class="hover:h-[30px] hover:w-[30px]" width="24"
+          height="24" viewBox="0 0 24 24">
+          <path fill="currentColor" fill-rule="evenodd"
+            d="M8 7a4 4 0 1 1 8 0a4 4 0 0 1-8 0m0 6a5 5 0 0 0-5 5a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3a5 5 0 0 0-5-5z"
+            clip-rule="evenodd" /></svg> </a>
+    </div>
+
+  </footer>
+</body>
+
 </html>
