@@ -5,6 +5,6 @@
     "build": "tailwindcss -i ./input.css -o ./output.css --watch"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.19"
   }
 }
