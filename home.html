@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" >
 
 <head>
   <meta charset="UTF-8" />
@@ -7,17 +7,20 @@
   <title>Document</title>
   <link href="./output.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 
-<body class="bg-white dark:bg-gray-900">
+<body class="bg-white  text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
   <header class="bg-white sticky top-0 z-10 h-[10vh] flex justify-between">
     <button id="menu-btn" class=" focus:outline-none">
     <svg xmlns="http://www.w3.org/2000/svg" class="m-5"  width="35" height="35" viewBox="0 0 16 16">
       <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
         d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5" />
-    </svg></button>
+    </svg></button> 
+ 
     <div id="mobile-menu" class="hidden w-full  bg-white shadow-lg absolute top-[10vh] left-0 flex  flex-col items-center gap-4 py-4 z-50">
-      <a href="#" class="hover:bg-slate-500 h-8 w-full text-center">Mode Sombre</a>
+      <a href="#"  class="hover:bg-slate-500 h-8 w-full text-center">Mode Sombre</a>
       <a href="#" class="hover:bg-slate-500 h-8 w-full text-center">home</a>
       <a href="#" class="hover:bg-slate-500 h-8 w-full text-center">home</a>
     </div>
@@ -32,7 +35,7 @@
     </svg>
   </header>
   <main class="">
-    <p class="ml-4 font-bold text-xl">Blogger of week</p>
+    <p class="ml-4 font-bold text-xl dark:bg-gray-900 dark:text-white">Blogger of week</p>
     <div class="flex w-max">
       <div class="flex flex-col m-2 ml-4">
         <img src="photo/p1.avif" alt="photo" class="rounded-full h-[70px] w-[70px]  object-cover" />
@@ -337,6 +340,18 @@
         const btn = document.getElementById('menu-btn');
         const menu = document.getElementById('mobile-menu');
         btn.addEventListener('click' , ()=> { menu.classList.toggle('hidden') ;});
+        
+
+         const mode = document.getElementById("theme-toggle");
+         const htmlElement = document.documentElement;
+         mode.addEventListener('click' , ()=> {
+          htmlElement.classList.toggle('dark')
+         });
+
+
+
+
+        
        </script>
 
 
