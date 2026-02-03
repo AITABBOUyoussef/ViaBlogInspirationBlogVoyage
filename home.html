@@ -87,7 +87,7 @@
           <h3 class="text-3xl fond-bold text-gray-700 dark:text-white mb-6 text-conter">
             Add Destination
           </h3>
-          <form id="Destination_page" class="space-y-4">
+          <form id="add-voyage" class="space-y-4">
             <div>
               <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Titre</label>
               <input type="text" id="Titre"
@@ -101,11 +101,16 @@
                 class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 outline-none dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                 placeholder="Entrez la Destination" required />
             </div>
-            <div >
-              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Note </label>
-              <input type="number" id="note" name="note" max="1" min="5" 
+            <div class="flex w-ful gap-2">
+              <div class="w-1/2"><label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Note </label>
+              <input type="number" id="note" name="note" max="5" min="1" 
                 class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 outline-none dark:bg-gray-700 dark:border-gray-600 dark:text-white"
-                placeholder="Entrez la note" required>
+                placeholder="Entrez la note" required></div>
+                <div class="w-1/2">
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Date </label>
+              <input type="date" id="date"  
+                class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 outline-none dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                placeholder="Entrez la " required></div>
             </div>
 
             <div>
@@ -138,8 +143,8 @@
 </div>
 </div>
 
-<div id="cart" class="flex flex-col h-min shadow-2xl m-4 rounded-lg border border-black border-solid relative">
-  
+<div id="cart" >
+
 </div>
 
 
@@ -151,7 +156,7 @@
     </button>
 
     <div id="photo-menu-mobil" class="hidden lg:w-[20%] w-[30%] bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300 shadow-lg absolute top-5 right-0 flex flex-col items-center gap-1 py-4 z-50">
-      <button id="dark-btn" class="hover:bg-green-500/60 rounded-lg h-10 w-full text-center" aria-label="Toggle Dark Mode">
+      <button  id="dark-btn" class="hover:bg-green-500/60 rounded-lg h-10 w-full text-center" aria-label="Toggle Dark Mode">
        Modifier
       </button>
      <button id="dark-btn" class="hover:bg-green-500/60 rounded-lg h-10 w-full text-center" aria-label="Toggle Dark Mode">
