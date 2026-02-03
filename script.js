@@ -23,7 +23,54 @@ let voyages = [
     }
 ];
 const cart = document.getElementById('cart');
+// function render() {
+//     cart.innerHTML = "";
+//     voyages.forEach((e) => {
+//         const cardHTMl =` <article class="flex flex-col h-min shadow-2xl m-4 rounded-lg border border-black border-solid relative">
+//         <button id="photo-menu" class="focus:outline-none absolute top-1 right-1 z-10" aria-label="Open Menu">
+//      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><circle cx="8" cy="2.5" r=".75"/><circle cx="8" cy="8" r=".75"/><circle cx="8" cy="13.5" r=".75"/></g></svg>
+//     </button>
 
+//     <div id="photo-menu-mobil" class="hidden lg:w-[20%] w-[30%] bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300 shadow-lg absolute top-5 right-0 flex flex-col items-center gap-1 py-4 z-50">
+//       <button id="dark-btn" class="hover:bg-green-500/60 rounded-lg h-10 w-full text-center" aria-label="Toggle Dark Mode">
+//        Modifier
+//       </button>
+//      <button id="dark-btn" class="hover:bg-green-500/60 rounded-lg h-10 w-full text-center" aria-label="Toggle Dark Mode">
+//        Supprimer
+//       </button>
+       
+//     </div>
+
+//       <div class="bg-[url('${e.image}')] bg-center bg-cover mx-4 mt-4 h-[30vh] lg:h-[90vh] rounded-md relative">
+//         <a href="detail.html" class="absolute inset-0 z-0" aria-label="Read more about Yellox River"></a>
+        
+//         <button class="absolute top-2 right-3 bg-white/50 hover:bg-red-400 duration-300 h-[50px] w-[50px] rounded-full flex justify-center items-center z-10" aria-label="Add to favorites">
+//           <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 48 48" aria-hidden="true">
+//             <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+//               d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.99 10.99 0 0 0 15 8" />
+//           </svg>
+//         </button>
+//       </div>
+      
+//       <div class="flex justify-between mx-4 mt-4">
+//         <h3 class="ml-2 text-lg font-bold">${e.titre}</h3>
+//         <div class="flex items-center gap-1">
+//           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="17.93" r="4.82" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" d="M24 43.83c.43 0 1.26-.11 1.26-1.74h0c0-5.14 7.27-10.78 10.57-17.15a13.76 13.76 0 1 0-23.66 0c3.3 6.37 10.57 12 10.57 17.15c0 1.63.83 1.74 1.26 1.74" stroke-width="2"/></svg>
+//           <span class="font-extralight text-sm">${e.destination}</span>
+          
+//           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0m9 0H8.5M12 7v5"/></svg>
+//           <span class="font-extralight text-sm">${e.categorie}</span>
+          
+//           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0"/><path d="M2 12c1.6-4.097 5.336-7 10-7s8.4 2.903 10 7c-1.6 4.097-5.336 7-10 7s-8.4-2.903-10-7"/></g></svg>
+//           <span class="font-extralight text-sm">${e.note}</span>
+//         </div>
+//       </div>
+//       <p class="ml-6 font-light mb-2">by Youssef Ait Abbou</p>
+//     </article>`;
+//     cart.innerHTML += cardHTML;
+    
+//     });
+// }
 function render() {
     cart.innerHTML = "";
     voyages.forEach((e) => {
@@ -35,7 +82,7 @@ function render() {
             </button>
 
             <div class="menu-mobil hidden lg:w-[20%] w-[30%] bg-white text-black dark:bg-gray-900 dark:text-white shadow-lg absolute top-5 right-0 flex flex-col items-center gap-1 py-4 z-50">
-                <button mod-id=${e.id}  class="mod-btn hover:bg-green-500/60 rounded-lg h-10 w-full text-center">Modifier</button>
+                <button class=" hover:bg-green-500/60 rounded-lg h-10 w-full text-center">Modifier</button>
                 <button data-id="${e.id} " class=" delete-btn hover:bg-green-500/60 rounded-lg h-10 w-full text-center">Supprimer</button>
             </div>
 
@@ -97,29 +144,6 @@ cart.addEventListener('click' , (e)=>{
 });
 
 // mod form
-cart.addEventListener('click' , (e)=>{
-    if(e.target.classList.contains('mod-btn')){
-        const idMod = e.target.getAttribute('mod-id');
-
-    }
-})
-const ModForm = document.getElementById('add-voyage');
-addForm.addEventListener('submit' , (e)=>{
-    e.preventDefault();
-    const newVoyageMod = {
-        id: idMod,
-        titre:document.getElementById('Titre').value,
-        destination:document.getElementById('des').value,
-        note:document.getElementById('note').value,
-        categorie:document.getElementById('cat').value,
-        image:document.getElementById('img').value,
-        date:document.getElementById('date').value,
-    };
-    voyages.push(newVoyageMod);
-    render();
-    ModForm.reset();
-    
-});
 
 
 // add form
@@ -138,6 +162,7 @@ addForm.addEventListener('submit' , (e)=>{
     voyages.push(newVoyage);
     render();
     addForm.reset();
+    closeModal();
     
 });
 
