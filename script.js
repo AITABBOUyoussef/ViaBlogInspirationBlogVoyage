@@ -162,7 +162,7 @@ addForm.addEventListener('submit' , (e)=>{
     voyages.push(newVoyage);
     render();
     addForm.reset();
-    closeModal();
+    
     
 });
 
