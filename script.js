@@ -122,6 +122,16 @@ cart.addEventListener('click' , (e) => {
     }
 });
 
+// save changes
+addForm.addEventListener('submit', (e)=> {
+    e.preventDefault();
+    if(editId){
+        const index = voyages.findIndex(v => v.id == editId);
+
+        voyages[index] = {}
+    }
+})
+
 
 // add form
 const addForm = document.getElementById('add-voyage');
