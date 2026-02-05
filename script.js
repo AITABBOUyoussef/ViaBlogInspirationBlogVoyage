@@ -240,7 +240,7 @@ function render() {
 
     voyages.forEach((e) => {
         const cardHTML = `
-        <article class="flex flex-col h-max shadow-2xl m-4 rounded-lg border border-black border-solid relative bg-white dark:bg-gray-800 mb-10">
+        <article class="flex flex-col shadow-2xl m-4 rounded-lg border border-black border-solid relative bg-white dark:bg-gray-800 ">
             <button class="menu-btn focus:outline-none absolute top-1 right-1 z-10" aria-label="Open Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><circle cx="8" cy="2.5" r=".75"/><circle cx="8" cy="8" r=".75"/><circle cx="8" cy="13.5" r=".75"/></g></svg>
             </button>
@@ -332,8 +332,11 @@ cart.addEventListener('click', (e) => {
             editId = id;
             document.querySelector('#modal h3').textContent = "Edit Destination";
             openModal();
+            closeModal();
+            
         }
     }
+  
 });
 
 // 6. HEADER & DARK MODE
