@@ -233,7 +233,7 @@ function closeModal() {
     document.querySelector('#modal h3').textContent = "Add Destination";
 }
 
-// 3. RENDER FUNCTION
+// 3. RENDER FUNCTION 
 function render() {
     if (!cart) return;
     cart.innerHTML = "";
